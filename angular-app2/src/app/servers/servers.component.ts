@@ -8,32 +8,22 @@ import { setTimeout } from 'timers';
 })
 export class ServersComponent implements OnInit {
 
-  name: string = "James";
-  serverId = 10;
-  allowNewServer = false;
-  serverCreationStatus = "No server was created!";
-  serverName = '';
-  serverCreated = false;
-  isValid = false;
+
+  a = 10;
+  b = 5;
+  str = 'yes';
 
   constructor() { 
-    setTimeout(() => {
-      this.allowNewServer = true;
-    }, 2000)
+    
   }
 
   ngOnInit() {
   }
 
-  onCreateServer() {
-    this.serverCreated = true;
-    this.isValid = true;
-    this.serverCreationStatus = "Server Created!";
+  myFunc() {
+    return true;
   }
 
-  onUpdateServerName(event: any) {
-    console.log(event);
-    this.serverName = event.target.value;
-  }
+  
 
 }

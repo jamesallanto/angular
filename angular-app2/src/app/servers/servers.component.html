@@ -1,23 +1,7 @@
 <div class="container">
-<label for="">{{ serverName }}</label>
-<input type="text" class="form-control" (input)="onUpdateServerName($event)">  
-<p class="sample">
-  {{ name }} - {{ serverId }}
-</p>
-</div>
-<div class="container">
-  <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
-  <!-- <p [innerText]="allowNewServer"></p> -->
-  <p>{{ serverCreationStatus }}</p>
-  <p *ngIf="serverCreated">Server was created, server name is {{ serverName }}</p>
+  <div *ngIf="false"></div>
+  <div *ngIf="a > b">greater</div>
+  <div *ngIf="str == 'yes'">yes</div>
+  <div *ngIf="myFunc()">True</div>
 </div>
 
-<h3>If Else</h3>
-
-<div *ngIf="isValid; else isValidFalse">
-    True
-</div>
-
-<ng-template #isValidFalse>
-    False
-</ng-template>
